@@ -20,6 +20,7 @@ def up_1():
     y = old_pos[1]
     turtle.goto(x,y+10)
     print(turtle.pos())
+    
 def down_1():
     global direction
     direction = down
@@ -29,6 +30,7 @@ def down_1():
     y = old_pos_2[1]
     turtle.goto(x,y-10)
     print(turtle.pos())
+    
 def right_1():
     global direction
     direction = right
@@ -38,6 +40,7 @@ def right_1():
     y = old_pos_3[1]
     turtle.goto(x+10,y)
     print(turtle.pos())
+    
 def left_1():
     global direction
     direction = left
@@ -47,12 +50,17 @@ def left_1():
     y = old_pos_4[1]
     turtle.goto(x-10,y)
     print(turtle.pos())
-#def stampthis():
-#    turtle.stamp()
-    
+
+turtle.onkeypress(turtle.clear,"d")
 turtle.onkeypress(turtle.stamp,SPACEBAR)
 turtle.onkeypress(up_1,UP_ARROW)
 turtle.onkeypress(down_1,DOWN_ARROW)
 turtle.onkeypress(right_1,RIGHT_ARROW)
 turtle.onkeypress(left_1,LEFT_ARROW)
 turtle.listen()
+
+
+
+
+
+
